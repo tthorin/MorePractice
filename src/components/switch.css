@@ -1,49 +1,45 @@
 .switch {
-	appearance: none;
-	background-color: #c2c2c2;
-	/* color: blueviolet; */
-	/* border: 1px solid blue; */
-	width: 2.5em;
-	height: 1em;
-	margin: 1em;
-	border-radius:1em;
-	position: relative;
-}
-switch:after{
-	content: "dfgdfg";
+  appearance: none;
+  background-color: #c2c2c2;
+  width: 2.5em;
+  height: 1em;
+  margin: 1em;
+  border-radius: 1em;
+  position: relative;
+  top: 0.3em;
 }
 .switch:checked {
-	background-color: #b17ae4;
-	color: white;
+  background-color: #b17ae4;
+  color: white;
 }
 
- input[type=checkbox].switch:after {
-	 position: relative;
-	 bottom:0.17em;
-	 right: 0.3em;
-	content:"";
-	display: inline-block;
-	width:1.3em;
-	height: 1.3em;
-	background-color: white;
-	box-shadow: 1px 1px 3px black;
-	border-radius: 50%;
-	transition: all 0.2s ease-in-out;
- }
- input[type=checkbox].switch:checked:after {
-   transform: translateX(1.8em);
-   background-color: #7c16f1;
+input[type="checkbox"].switch:after {
+  position: relative;
+  bottom: 0.17em;
+  right: 0.3em;
+  content: "";
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
-.switch-container{
-	display: inline-block;
-	align-items: center;
-	width: max-content;
+input[type="checkbox"].switch:checked:after {
+  transform: translateX(1.8em);
+  background-color: #7c16f1;
 }
-.switch-container>label{
-	position: relative;
-	bottom: 0.4em;
-	color:#c2c2c2;
+.switch-container {
+  display: inline-block;
+  align-items: center;
+  width: max-content;
+  position: relative;
+}
+.switch-container > label {
+  position: relative;
+  color: #c2c2c2;
 }
 label.active {
-   color: #6a11cf;
+  color: #6a11cf;
 }

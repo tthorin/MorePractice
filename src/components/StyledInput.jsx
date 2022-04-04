@@ -10,7 +10,7 @@ const StyledInput = (props) => {
         className={"styled-input"+hasFocus}
         onFocus={() => setHasFocus(" focused")}
         onBlur={() => setHasFocus("")}
-		onChange={(e) => setSmallLabel(e.target.value.length>0?" small":"")}
+		    onChange={(e) => setSmallLabel(e.target.value.length>0 ? " small" : "")}
         type="text"
       />
       <label className={"styled-label "+smallLabel+hasFocus} htmlFor="text">{props.label}</label>
