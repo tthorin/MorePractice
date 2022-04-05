@@ -1,6 +1,5 @@
-body {
+.App {
   text-align: center;
-  border-color: black;
 }
 button {
 	color: white;
@@ -15,14 +14,14 @@ button {
 	filter:drop-shadow(1px 1px 2px #615e5e);
 	margin: 1em;
 }
-button:disabled{
-	background-color: #a895cb;
-	color: rgb(197, 191, 191);
-
+button:disabled {
+	background-color: #ccc;
+}
+button:hover {
+	cursor: pointer;
 }
 
 .dark {
 	background-color: black;
 	color: white;
-	border-color: white;
 }

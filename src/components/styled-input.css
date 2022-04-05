@@ -10,6 +10,7 @@
 	top: 0.7em;
 	color: #5d5b5b;
 	transition: transform 0.2s ease-in-out;
+	pointer-events: none;
 }
 .styled-input {
 	padding: 1.2em 0.5em 0.5em 0.5em;

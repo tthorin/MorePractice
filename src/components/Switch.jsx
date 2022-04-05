@@ -12,7 +12,7 @@ const Switch = ({label, action, value}) =>{
 
 	return(
 		<div className="switch-container">
-		<label htmlFor="checkbox" className={active && "active"}>{label}
+		<label htmlFor="checkbox" className={active ? "active":""}>{label}
 			<input className ="switch" type="checkbox" onChange={()=>{setActive(!active); (action && action(!value))}}/>
 		</label>
 		</div>

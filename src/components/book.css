@@ -8,10 +8,73 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+.book{
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	border: 2px solid black;
+	padding: 0em 0.7em 0.5em 0.7em;
+	box-shadow: 4px 4px 10px;
+	border-radius: 0.5em;
+	font-size: 1.2em;
+}
+.book-page>section{
+	min-height: 12em;
+}
+.book-spine{
+	width:0em;
+	height: 100%;
+	border:1px solid black;
+	border-bottom: 0em;
+}
 .book-page{
     display: flex;
+	flex-direction: column;
     border: 2px solid;
-    margin: 1em;
+	border-top: 0em;
+	margin: 0em;
+	border-bottom: 0em;
+	margin-bottom: 0em;
     padding: 2em;
-    width: 20em;
+	padding-top: 0em;
+    max-width: 15em;
+	min-height: 13em;
+	
+}
+.right{
+	border-top-left-radius: 2em;
+	grid-column: 3;
+	border-left: 0em;
+}
+.right >p{
+	text-align: right;
+}
+.left{
+	border-top-right-radius: 2em;
+	grid-column: 1;
+	border-right: 0em;
+}
+.left >p{
+	text-align: left;
+}
+.book-page>p{
+	margin: 0em;
+	margin-bottom: 1em;
+	padding: 0;
+}
+.page-top{
+	display: flex;
+    border: 2px solid;
+	border-bottom: 0em;
+    margin-top: 0em;
+    padding: 1em;
+    max-width: 17em;
+	/* background: repeating-linear-gradient(white,white 2px,black 2px,black 4px); */
+}
+.page-bottom{
+	display: flex;
+    border: 2px solid;
+    margin-top: 0em;
+    padding: 1em;
+    max-width: 17em;
+	background: repeating-linear-gradient(white,white 2px,black 2px,black 4px);
 }
